@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    <div class="game-container">
+        <h1>Jeu de Devinette</h1>
+        <p>Devinez le nombre mystère entre <span id="min">1</span> et <span id="max">100</span>.</p>
+        <input type="number" id="guessInput" placeholder="Entrez votre nombre" />
+        <button id="submitGuess">Valider</button>
+        <p id="feedback"></p>
+        <p id="attempts"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
